@@ -6,4 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".jobs">
 
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAHNE SENDE"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="32dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/createProfile"
+        android:layout_width="341dp"
+        android:layout_height="51dp"
+        android:text="PROFİL OLUŞTUR"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="85dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
