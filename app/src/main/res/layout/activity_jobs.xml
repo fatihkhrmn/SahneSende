@@ -4,24 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/in"
     tools:context=".jobs">
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
         android:text="SAHNE SENDE"
+        android:textColor="#000"
         android:textSize="30dp"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="32dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/createProfile"
         android:layout_width="341dp"
         android:layout_height="51dp"
+        android:layout_marginTop="30sp"
         android:text="PROFİL OLUŞTUR"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="85dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
         tools:ignore="MissingConstraints" />
+
+    <ListView
+        android:layout_width="410dp"
+        android:layout_height="520dp"
+        android:id="@+id/jobList"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/createProfile"
+        tools:layout_editor_absoluteX="1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
