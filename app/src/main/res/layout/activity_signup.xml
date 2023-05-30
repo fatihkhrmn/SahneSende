@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/up"
+    tools:context=".signup">
+
+    <EditText
+        android:id="@+id/artistEmail"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50sp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Kullanıcı Adı"
+        android:background="@drawable/dt"
+        android:paddingLeft="20sp"
+        android:textSize="20sp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Kayıt Oluştur"
+        android:textSize="40sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/artistPassword"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30sp"
+        android:hint="Parola"
+        android:background="@drawable/dt"
+        android:paddingLeft="20sp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artistEmail" />
+
+    <EditText
+        android:id="@+id/artistPasswordAgain"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30sp"
+        android:hint="Parolayı Onayla"
+        android:background="@drawable/dt"
+        android:paddingLeft="20sp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artistPassword" />
+
+    <Button
+        android:id="@+id/artistSignup"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:text="Kayıt Ol"
+        android:background="@drawable/bts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/artistPasswordAgain" />
+</androidx.constraintlayout.widget.ConstraintLayout>
