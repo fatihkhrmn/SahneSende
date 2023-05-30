@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "188546153729",
+    "project_id": "sahne-sende-v2",
+    "storage_bucket": "sahne-sende-v2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:188546153729:android:a00cd3e010a0ee8228af00",
+        "android_client_info": {
+          "package_name": "com.example.sahne_sende"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDENAFHOF4G320OrCVcL0R2SUPFXvmv5FM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
