@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,6 +27,7 @@ import java.util.ArrayList;
 public class artist extends AppCompatActivity {
 
     Button createAd;
+    ImageButton backArtist;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     ArrayList<String> list = new ArrayList<String>();
     @SuppressLint("MissingInflatedId")
@@ -35,7 +37,16 @@ public class artist extends AppCompatActivity {
         setContentView(R.layout.activity_artist);
 
         createAd = findViewById(R.id.createAd);
+        backArtist = findViewById(R.id.backArtist);
         ListView listView = findViewById(R.id.artistList);
+
+        backArtist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(artist.this, home.class);
+                startActivity(intent);
+            }
+        });
 
         createAd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +68,7 @@ public class artist extends AppCompatActivity {
                             }
                             ArrayAdapter<String> arrayAdapter = new ArrayAdapter<>(artist.this, android.R.layout.simple_list_item_1, list);
                             listView.setAdapter(arrayAdapter);
+
                         }
                         else{
                             Toast.makeText(artist.this, "Lütfen tekrar deneyin!", Toast.LENGTH_SHORT).show();

@@ -10,6 +10,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -23,6 +24,7 @@ public class advertise extends AppCompatActivity {
 
     EditText companyName,companyPhone,gift;
     Button saveAdvertise;
+    ImageButton backAdv;
     private HashMap<String, Object> jobData;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     @SuppressLint("MissingInflatedId")
@@ -36,6 +38,15 @@ public class advertise extends AppCompatActivity {
         companyPhone = findViewById(R.id.companyPhone);
         gift = findViewById(R.id.gift);
         saveAdvertise = findViewById(R.id.saveAdvertise);
+        backAdv = findViewById(R.id.backAdv);
+
+        backAdv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(advertise.this, artist.class);
+                startActivity(intent);
+            }
+        });
 
         saveAdvertise.setOnClickListener(new View.OnClickListener() {
             @Override

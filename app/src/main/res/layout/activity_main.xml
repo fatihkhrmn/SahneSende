@@ -5,15 +5,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main"
+    android:background="@drawable/general"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:text="Hoşgeldiniz"
+        android:layout_marginTop="160dp"
+        android:text="SAHNE SENDE"
         android:textColor="#000"
         android:textSize="50sp"
         android:textStyle="bold"
@@ -25,29 +25,40 @@
 
     <Button
         android:id="@+id/signup"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="50sp"
-        android:background="@drawable/bt"
-        android:textColor="#000"
-        android:textStyle="bold"
-        android:textSize="25dp"
+        android:layout_width="385dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/baseline_crop_16_9_24"
         android:text="Kayıt Oluştur"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="385dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/baseline_crop_16_9_24"
+        android:text="Giriş Yap"
+        android:textColor="#000"
+        android:textSize="25dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <Button
-        android:id="@+id/login"
-        android:layout_width="300dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/bt"
-        android:textColor="#000"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:text="Giriş Yap"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="127dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="35dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signup" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/stage" />
 </androidx.constraintlayout.widget.ConstraintLayout>

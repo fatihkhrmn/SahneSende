@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -24,6 +25,7 @@ import java.util.ArrayList;
 public class jobs extends AppCompatActivity {
 
     Button createProfile;
+    ImageButton backJobs;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     ArrayList<String> list = new ArrayList<String>();
 
@@ -34,7 +36,16 @@ public class jobs extends AppCompatActivity {
         setContentView(R.layout.activity_jobs);
 
         createProfile = findViewById(R.id.createProfile);
+        backJobs = findViewById(R.id.backJobs);
         ListView listView = findViewById(R.id.jobList);
+
+        backJobs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(jobs.this, home.class);
+                startActivity(intent);
+            }
+        });
 
         createProfile.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".home"
-    android:background="@drawable/sahne">
+    android:background="@drawable/spaces">
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/dt"
         android:layout_marginTop="70dp"
+        android:textColor="#FFF"
+        android:textStyle="bold"
         android:padding="10dp"
         android:text="Şarkı mı söylüyorsun, enstrüman mı çalıyorsun, stand up gösterisi mi yapıyorsun veya herhangi bir sahne gösterisi mi yapmak istiyorsun? Tüm bunların ilk adımını atmak için"
-        android:textSize="23dp"
+        android:textSize="18dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
@@ -24,11 +25,12 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/dt"
-        android:layout_marginLeft="25sp"
         android:layout_marginBottom="20sp"
-        android:textSize="23dp"
-        android:text="Kurumunuzdakileri neşelendirmek ve şimdi mevcut sanatçılara bakmaya başlayabilirsiniz veya ilan koyabilirsiniz!"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:padding="10dp"
+        android:textSize="18dp"
+        android:text="Kurumunuzdakileri neşelendirmek ve aynı zamanda sanatçıların heyecanlarını yenmelerine destek olmak için şimdi mevcut sanatçılara bakmaya başlayabilirsiniz veya ilan koyabilirsiniz!"
         app:layout_constraintBottom_toTopOf="@+id/artistButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -39,8 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:text="HOŞGELDİNİZ"
-        android:background="@drawable/dt"
-        android:textColor="#000"
+        android:textColor="#FFF"
         android:textStyle="bold"
         android:textSize="35dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -51,18 +52,19 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/dt"
         android:layout_marginTop="10dp"
         android:textSize="23dp"
+        android:textStyle="bold"
         android:text="SAHNE SENDE"
+        android:textColor="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <ImageButton
         android:id="@+id/jobsButton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,12 +74,11 @@
 
     <ImageButton
         android:id="@+id/artistButton"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.557"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_menu_search" />
 </androidx.constraintlayout.widget.ConstraintLayout>

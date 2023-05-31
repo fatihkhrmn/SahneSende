@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -22,6 +23,7 @@ public class profile extends AppCompatActivity {
 
     EditText artistName,artistPhone,artistEmail,artistSkills;
     Button saveProfile;
+    ImageButton backProf;
     private HashMap<String, Object> profileData;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     @Override
@@ -34,6 +36,15 @@ public class profile extends AppCompatActivity {
         artistEmail = findViewById(R.id.artistEmail);
         artistSkills = findViewById(R.id.artistSkills);
         saveProfile = findViewById(R.id.saveProfile);
+        backProf = findViewById(R.id.backProf);
+
+        backProf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(profile.this, jobs.class);
+                startActivity(intent);
+            }
+        });
 
         saveProfile.setOnClickListener(new View.OnClickListener() {
             @Override
